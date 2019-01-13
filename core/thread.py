@@ -89,7 +89,7 @@ class Thread:
         tasks = [self.bot.log_channel.send(embed=em)]
 
         em = discord.Embed(title='Thread Closed')
-        em.description = message or f'{closer.mention} has closed this modmail thread.'
+        em.description = message or f'{closer.mention} a fermé votre ticket.'
         em.color = discord.Color.red()
 
         if not silent and self.recipient is not None:
